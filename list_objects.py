@@ -1,6 +1,6 @@
 #list-creating list objects
 
-#1.creating empty[] list
+print("______1.creating empty[] list_____")
 
 l=[]
 print(l)
@@ -18,7 +18,7 @@ print(type(l))
 print(len(l))
 print("\n")
 
-#2.creating list object using known elements
+print("_______2.creating list object using known elements_______")
 
 l=[1,2,3,"suchi","bhavi",0.9,False,"&",]
 print(l)
@@ -31,7 +31,7 @@ print(type(l))
 print(len(l))
 print("\n")
 
-#3.creating list object using dynamic data
+print("_______3.creating list object using dynamic data______")
 
 l=eval(input("enter list:"))#we do not skip eval,eval is mandatory
 print(l)
@@ -39,7 +39,7 @@ print(type(l))
 print(len(l))
 print("\n")
 
-#4.creating list object using split
+print("_______4.creating list object using split_______")
 
 l="a b c 176 3+0j "
 x=l.split()
@@ -53,7 +53,7 @@ print(len(x))
 print("\n")
 
 
-#5.creating list object using list()
+print("_____5.creating list object using list()_____")
 
 l="123" 
 b=list(l)
@@ -68,21 +68,21 @@ print(type(b))
 
 print("___________________________retrieve/accessing____________________")
 
-#1.indexing
+print("______1.indexing______")
 
 x=["suchi",3,0.6,"data",True]
 print(x[3])
 print(x[-1])
 print("\n")
 
-#2.slicing
+print("________2.slicing______")
 
 list=["suchi",3,0.6,"data","True"]
 print(list[-1][::-1])
 print(type(list))
 print("\n")
 
-#3.count
+print("______3.count______")
 
 l=["suchi",1,2,30,"True",2,7,30,30,"suchi","bhavi"]
 print(l.count(30))
@@ -91,14 +91,14 @@ print("\n")
 
 print("______________________update______________________________")
 
-#1.append
+print("______1.append________")
 
 l=[1,2,34,5]
 l.append(30)
 print(l)
 print("\n")
 
-#2.extend
+print("________2.extend________")
 
 l=[1,2,34,5]
 l.extend([30,40])
@@ -119,7 +119,7 @@ print(l)
 print(type(l))
 print("\n")
 
-#3.insert
+print("_______3.insert_________")
 
 l=[1,2,3]
 l.insert(0,9)
@@ -127,7 +127,7 @@ print(l)
 print(type(l))
 print("\n")
 
-#4.reverse
+print("___________4.reverse_______")
 
 l=[1,2,4]
 l1=[3,5,6]
@@ -137,16 +137,32 @@ l.reverse()
 print(l)
 print("\n")
 
-#5.sort
+print("___________5.sort_________")
 
 l=[8,9,0,11,2,5,3]
 print(l[0:4])
 l.sort()
 print(l)
 
+
+print("________________________concatination______________________")
+#concatination
+l=[10,20,2]
+l1=[20,30,40]
+l2=l+l1
+print(l2)
+print("\n")
+
+print("________________________repetition________________________")
+#repetition
+l=[1,2,3]
+b=l*3
+print(b)
+
+
 print("____________________delete___________________")
 
-#1.remove
+print("_____1.remove_____")
 
 l=[1,4,5,8,0]
 l.remove(0)
@@ -154,19 +170,24 @@ print(l)
 print("\n")
 
 
-#2.pop
+print("___2.pop_____")
 
 l=[1,4,5,8,0]
 l.pop()
 print(l)
 print("\n")
 
-#3.clear
+print("_____3.clear___")
 
 l=[1,4,5,8,0]
 l.clear()
 print(l)
 print("\n")
+
+
+
+
+
 
 
 
