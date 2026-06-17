@@ -101,7 +101,7 @@ print("\n")
 print("________2.extend________")
 
 l=[1,2,34,5]
-l.extend([30,40])
+l.extend([90,78])
 print(l)
 print(type(l))
 print("\n")
@@ -183,9 +183,52 @@ l=[1,4,5,8,0]
 l.clear()
 print(l)
 print("\n")
+print("======copy methods========")
+print("____1. aliasing_____")
+l=[10,20,30,40]
+l1=l
+print(l)
+print(l1)
+l1[3]=23
+print(l1)
+print(l)
+
+print("\n")
+print("_____2.cloning________")
+print("===A.slicing======")
+l1=[10,20,30,40]
+l2=l1[0:3]
+print(l1)
+print(l2)
+l2[2]=23
+print(l1)
+print(l2)
+print("\n")
+
+print("_______3.copy_________")
+l1=[10,20,30,40]
+l2=l1.copy()
+print(l1)
+print(l2)
+l2[3]=23
+print(l1)
+print(l2)
+print("\n")
+
+print("______nested list_____")
+list=[10,90,8,4,87,6,54,67,[22,"suchi",[65,88]]]
+print(list[3])
+print(list[-1][1])
+print(list[-1][2][1])
+
+print("\n___________maximum_________\n")
+s=[100,200,300,667,345,876]
+print(max(s))
 
 
-
+print("\n___________minimum_________\n")
+num=[34,99,45,77,91,46,0.4]
+print(min(num))
 
 
 
