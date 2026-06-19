@@ -39,6 +39,13 @@ print(s)
 print(type(s))
 
 print("\n===================delete===================================\n")
+print("\n____________________remove_________________________\n")
+
+s={1,3,5,8}
+s.remove(5)
+print(s)
+print(type(s))
+
 print("\n____________________discard_________________________\n")
 d={100,20,300,800}
 d.discard(400)
@@ -85,4 +92,29 @@ print("\n____________________set difference_______________________\n")
 s={2,3,4,5}
 s1={2,3,9,3,}
 print(s.difference(s1)) 
-print(s-s1)                                                                                                                                                                                                                          
+print(s-s1) 
+ 
+print("\n____________________symmetric difference b/w sets_______________________\n")
+a={1,2,3,4}
+b={2,6,8,9}
+c=a^b
+d=a.symmetric_difference(b)
+print(c)
+print(d)
+
+print("\n___________________________subset________________\n")
+a={1,2,3,4}
+b={1,2}
+print(b.issubset(a))
+
+print("\n___________________________disjoint________________\n")
+set={12,44,67,90}
+set1={"jf","kjjd","8k"}
+print(set.isdisjoint(set1))
+
+print("\n___________________________superset________________\n")
+a={6,8,9,0,8,6}
+b={0,6,8}
+print(a.issuperset(b))
+
+                                                                                                                                                                                                                         
